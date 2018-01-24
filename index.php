@@ -17,7 +17,7 @@
 
 
 <script>
-window.onload = function test() {
+/*window.onload = function test() {
 
   var input = document.getElementById("fornavn");
 
@@ -35,7 +35,7 @@ input.onfocus = function() {
     fornavn.innerHTML = "";
   }
 };
-}
+}*/
 </script>
 
 
@@ -81,7 +81,7 @@ input.onfocus = function() {
   });
   </script>
 
-  <title>Registreringsskjema</title>
+  <title>Registration Form</title>
 </head>
 
 <body>
@@ -166,64 +166,64 @@ input.onfocus = function() {
       <fieldset>
         <div>
           <img src="resources/images/personalialogo.svg" alt="Personalia Logo" id="personalialogo">
-          <legend id="personalia">Personalia</legend>
+          <legend id="personalia">Personal Details</legend>
           <hr />
         </div>
 
         <!--<legend>Personalia</legend>-->
-        <form method="post" action="index.php" name="personaliaform" id="personaliaform" onsubmit="return validateForm()">
-          <label class="control-label" for="selectbasic">Kjønn</label>
+        <form method="post" action="index.php" name="personaliaform" id="personaliaform" >
+          <label class="control-label" for="selectbasic">Gender</label>
           <select id="selectgender" name="gender" class="form-control" required>
-            <option value="mann">Mann</option>
-            <option value="kvinne">Kvinne</option>
-            <option value="annet">Annet</option>
+            <option value="mann">Man</option>
+            <option value="kvinne">Woman</option>
+            <option value="annet">Other</option>
           </select>
 
 
-          <label for="form-fornavn">Fornavn</label>
+          <label for="form-fornavn">First name</label>
           <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" id="fornavn"
-          name="fornavn" placeholder="Fornavn" required="true" autocomplete="off">
+          name="fornavn" placeholder="First name" required="true" autocomplete="off">
           <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
-          <label for="form-etternavn">Etternavn</label>
-          <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" id="etternavn" name="etternavn" placeholder="Etternavn" required="true" autocomplete="off">
+          <label for="form-etternavn">Surname</label>
+          <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" id="etternavn" name="etternavn" placeholder="Surname" required="true" autocomplete="off">
           <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
-          <label for="form-personnummer">Personnummer</label>
-          <input type="text" pattern="^[0-9]{11}$" class="form-control" name="personnummer" placeholder="Personnummer" required="true" maxlength="11" autocomplete="off">
+          <label for="form-personnummer">Personal ID</label>
+          <input type="text" pattern="^[0-9]{11}$" class="form-control" name="personnummer" placeholder="Personal ID" required="true" maxlength="11" autocomplete="off">
           <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
-          <label for="form-adresse">Adresse</label>
-          <input type="text" pattern="^[a-zA-ZÆØÅæøå0-9 ]+$" class="form-control" name="adresse" placeholder="Adresse" required="true" autocomplete="off">
+          <label for="form-adresse">Address</label>
+          <input type="text" pattern="^[a-zA-ZÆØÅæøå0-9 ]+$" class="form-control" name="adresse" placeholder="Address" required="true" autocomplete="off">
           <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
-          <label for="form-postnummer">Postnummer</label>
-          <input type="text" pattern="^[0-9]{4}$" id="postnummer" class="form-control" name="postnummer" placeholder="Postnummer" required="true" maxlength="4" autocomplete="off">
+          <label for="form-postnummer">Postal code</label>
+          <input type="text" pattern="^[0-9]{4}$" id="postnummer" class="form-control" name="postnummer" placeholder="Postal code" required="true" maxlength="4" autocomplete="off">
           <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
-          <label for="form-poststed">Poststed</label>
-          <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="poststed" placeholder="Poststed" disabled="disabled" autocomplete="off">
-          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-
-
-          <label for="form-kommune">Kommune</label>
-          <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="kommune" placeholder="Kommune" required="true" autocomplete="off">
-          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-
-          <label for="form-telefonnummer">Telefonnummer</label>
-          <input type="text" pattern="^[0-9\-\+]{8,15}$" class="form-control" name="telefonnummer" placeholder="Telefonnummer" required="true" autocomplete="off">
-          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-
-          <label for="form-telefonnummer">Epostadresse</label>
-          <input type="email" class="form-control" id="epost" name="epost" placeholder="epost@adresse.no" required="true" autocomplete="off">
-          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-
-          <label for="form-bankkonto">Bankkontonummer</label>
-          <input type="text" pattern="^[0-9]{11}$" class="form-control" name="bankkontonummer" placeholder="Bankkontonummer" maxlength="11" required="true" autocomplete="off">
+          <label for="form-poststed">City</label>
+          <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="poststed" placeholder="City" disabled="disabled" autocomplete="off">
           <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
 
-          <label for="control-label">Statsborgerskap</label>
+          <label for="form-kommune">Municipal</label>
+          <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="kommune" placeholder="Municipal" required="true" autocomplete="off">
+          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+
+          <label for="form-telefonnummer">Phone number</label>
+          <input type="text" pattern="^[0-9\-\+]{8,15}$" class="form-control" name="telefonnummer" placeholder="Phone number" required="true" autocomplete="off">
+          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+
+          <label for="form-telefonnummer">E-mail</label>
+          <input type="email" class="form-control" id="epost" name="epost" placeholder="email@email.com" required="true" autocomplete="off">
+          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+
+          <label for="form-bankkonto">Bank account number</label>
+          <input type="text" pattern="^[0-9]{11}$" class="form-control" name="bankkontonummer" placeholder="Bank account number" maxlength="11" required="true" autocomplete="off">
+          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+
+
+          <label for="control-label">Citizenship</label>
           <select id="selectbasic" name="statsborgerskap" class="form-control" required>
           	<option value="AF">Afghanistan</option>
           	<option value="AX">Åland Islands</option>
@@ -477,44 +477,44 @@ input.onfocus = function() {
               </select>
 
 
-          <label for="form-nok-navn">Nærmeste pårørendes navn</label>
-          <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="nok-navn" placeholder="Påførendes navn" required="true" autocomplete="off">
+          <label for="form-nok-navn">Nearest relative's name</label>
+          <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="nok-navn" placeholder="Nearest relative's name" required="true" autocomplete="off">
           <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
-          <label class="control-label" for="selectbasic">Nærmeste pårørendes relasjon</label>
+          <label class="control-label" for="selectbasic">Nearest relative's relationship</label>
           <select id="selectbasic" name="nok-relasjon" class="form-control" required>
-  				  <option value="forelder">Forelder</option>
-  				  <option value="ektefelle">Ektefelle</option>
-  				  <option value="samboer">Samboer</option>
-  				  <option value="kjareste">Kjæreste</option>
-  				  <option value="sosken">Søsken</option>
-  				  <option value="annet">Annet</option>
+  				  <option value="forelder">Parent</option>
+  				  <option value="ektefelle">Spouse</option>
+  				  <option value="samboer">Partner</option>
+  				  <option value="kjareste">Girlfriend/Boyfriend</option>
+  				  <option value="sosken">Sibling</option>
+  				  <option value="annet">Other</option>
 	        </select>
 
-          <label for="form-nok-telefon">Nærmeste pårørendes telefonnummer</label>
-          <input type="text" pattern="^[0-9\-\+]{8,15}$" class="form-control" name="nok-telefon" placeholder="Pårørendes telefonnummer" required="true" autocomplete="off">
+          <label for="form-nok-telefon">Nearest relative's phone number</label>
+          <input type="text" pattern="^[0-9\-\+]{8,15}$" class="form-control" name="nok-telefon" placeholder="Nearest relative's phone number" required="true" autocomplete="off">
           <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 
           <div class="form-group-biarbeidsgiver">
-            <label class="control-label" for="radios">Er Canon biarbeidsgiver?</label>
+            <label class="control-label" for="radios">Is Canon more than one employer?</label>
             <div class="radio">
               <label>
-              <input type="radio" name="biarbeidsgiver" value="ja" required>Ja</label>
+              <input type="radio" name="biarbeidsgiver" value="ja" required>Yes</label>
             </div>
             <div class="radio">
               <label>
-              <input type="radio" name="biarbeidsgiver" value="nei" required>Nei</label>
+              <input type="radio" name="biarbeidsgiver" value="nei" required>No</label>
             </div>
           </div>
       </fieldset>
       <fieldset>
 
 
-        <legend id="tilleggsopplysninger">Tilleggsopplysninger</legend>
+        <legend id="tilleggsopplysninger">Additional information</legend>
         <hr />
 
 
-        <label class="control-label" for="selectbasic">Skostørrelse</label>
+        <label class="control-label" for="selectbasic">Shoe size EU standard</label>
         <select id="selectbasic" name="sko" class="form-control">
 				  <option value="34">34</option>
 				  <option value="35">35</option>
@@ -533,7 +533,7 @@ input.onfocus = function() {
           <option value="48">48</option>
         </select>
 
-        <label class="control-label" for="selectbasic">T-skjorte</label>
+        <label class="control-label" for="selectbasic">T-shirt</label>
         <select id="selectbasic" name="tskjorte" class="form-control" >
   			  <option value="xs">XS</option>
   			  <option value="s">S</option>
@@ -543,7 +543,7 @@ input.onfocus = function() {
   			  <option value="xxl">XXL</option>
         </select>
 
-        <label class="control-label" for="selectbasic">Genser</label>
+        <label class="control-label" for="selectbasic">Sweater</label>
         <select id="selectbasic" name="genser" class="form-control" >
           <option value="xs">XS</option>
           <option value="s">S</option>
@@ -553,7 +553,7 @@ input.onfocus = function() {
           <option value="xxl">XXL</option>
         </select>
 
-        <label class="control-label" for="selectbasic">Jakke</label>
+        <label class="control-label" for="selectbasic">Jacket</label>
         <select id="selectbasic" name="jakke" class="form-control" >
           <option value="xs">XS</option>
           <option value="s">S</option>
@@ -562,7 +562,7 @@ input.onfocus = function() {
           <option value="xl">XL</option>
           <option value="xxl">XXL</option>
         </select>
-        <label class="control-label" for="selectbasic">Bukse</label>
+        <label class="control-label" for="selectbasic">Pants</label>
         <select id="selectbasic" name="bukse" class="form-control" >
           <option value="xs">XS</option>
           <option value="s">S</option>
@@ -575,30 +575,30 @@ input.onfocus = function() {
 
 
         <div class="form-group">
-          <label class="control-label" for="radios">Disponerer du bil?</label>
+          <label class="control-label" for="radios">Do you need a company car?</label>
           <div class="radio">
             <label>
-            <input type="radio" name="firmabil" value="ja" >Ja</label>
+            <input type="radio" name="firmabil" value="ja" >Yes</label>
           </div>
           <div class="radio">
             <label>
-            <input type="radio" name="firmabil" value="nei" >Nei</label>
+            <input type="radio" name="firmabil" value="nei" >No</label>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="control-label" for="radios">Vil du overføre privat mobilnummer til bedrift?</label>
+          <label class="control-label" for="radios">Do you want to transfer your private mobile number to business mobile number?</label>
           <div class="radio">
             <label>
-            <input type="radio" name="mobilabo" value="ja" >Ja</label>
+            <input type="radio" name="mobilabo" value="ja" >Yes</label>
           </div>
           <div class="radio">
             <label>
-            <input type="radio" name="mobilabo" value="nei" >Nei (Nytt nummer opprettes)</label>
+            <input type="radio" name="mobilabo" value="nei" >No (A new phone number will be created)</label>
           </div>
         </div>
         <div class="form-group">
-          <label class="control-label" for="radios">Foretrukket datamaskin?</label>
+          <label class="control-label" for="radios">Preffered type of computer?</label>
           <div class="radio">
             <label>
             <input type="radio" name="pc" value="pc" required>PC</label>
@@ -608,7 +608,7 @@ input.onfocus = function() {
             <input type="radio" name="pc" value="mac" required>Mac</label>
           </div>
         </div>
-        <button id="submitForm" name="submit" type="submit" value="submit"> Registrer</button>
+        <button id="submitForm" name="submit" type="submit" value="submit"> Register</button>
         </form>
       </fieldset>
     </div>
