@@ -79,7 +79,7 @@ legend#personalia {
   /* padding-bottom: 10px; */
   padding-top: 20px;
   /* border-bottom: 1px solid black; */
-  width: 100px;
+  width: 175px;
   /* margin-bottom: 20px; */
   margin-left: auto;
   margin-right: auto;
@@ -123,8 +123,8 @@ label {
 /*Inputs*/
 /*===================================*/
 
-input[name=poststed], select {
-  pointer-events: none;
+input[name=poststed] {
+/*  pointer-events: none;*/
 }
 
 input[type=text], select {
@@ -140,7 +140,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-input[type=email], select {
+input[type=email] {
   width: 100%;
   padding: 12px 20px;
   margin-top: 10px;
@@ -153,7 +153,7 @@ input[type=email], select {
   box-sizing: border-box;
 }
 
-input[type=radio], select {
+input[type=radio] {
   padding: 12px 20px;
   margin-top: 10px;
   margin-left: 0px;
@@ -161,7 +161,7 @@ input[type=radio], select {
   display: inline-block;
 }
 
-input[type=number], select {
+input[type=number] {
   width: 100%;
   padding: 12px 20px;
   margin-top: 10px;
@@ -228,10 +228,10 @@ img#logo {
 
 .invalid {
   /* border-color: red; */
-  border: 2px solid yellow;
+  /*border: 2px solid yellow;*/
 }
 input#fornavn {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 /* input:valid:focus{
