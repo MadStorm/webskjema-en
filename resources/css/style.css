@@ -1,0 +1,274 @@
+body {
+  background-color: #FFFFFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 1000px;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  /*margin-top: 15px;*/
+}
+
+/*===================================*/
+/*Div*/
+/*===================================*/
+
+div.logo {
+  padding-top: 10px;
+}
+
+div {
+  /*margin-top: 10px;*/
+}
+
+/*===================================*/
+/*Form*/
+/*===================================*/
+
+.form {
+  border-radius: 5px;
+  background-color: white;
+  /*#f2f2f2;*/
+  /*padding: 20px;*/
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  max-width: 800px;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group-biarbeidsgiver {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.form-group {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.radio {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid black;
+  margin: 1em 0;
+  padding: 0;
+}
+
+legend#personalia {
+  color: #016FBA;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  /* padding-bottom: 10px; */
+  padding-top: 20px;
+  /* border-bottom: 1px solid black; */
+  width: 100px;
+  /* margin-bottom: 20px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+legend#tilleggsopplysninger {
+  color: #016FBA;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  /* padding-bottom: 10px; */
+  padding-top: 20px;
+  /* border-bottom: 1px solid black; */
+  /*width: 200px;*/
+  /* margin-bottom: 20px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  min-width: 250px;
+}
+
+label {
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+
+/*===================================*/
+/*Inputs*/
+/*===================================*/
+
+input[name=poststed], select {
+  pointer-events: none;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=radio], select {
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  background-color: #8b0000;
+}
+
+/*===================================*/
+/*Button*/
+/*===================================*/
+
+button[type=submit] {
+  width: 100%;
+  background-color: #016FBA;
+  color: white;
+  padding: 14px 20px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+/*===================================*/
+/*Images*/
+/*===================================*/
+
+img#personalialogo {
+  /* Old
+	width: 50px;
+	height: 50px;
+	float: right;
+	position: relative;
+	right: -8px;*/
+  width: 50px;
+  height: 50px;
+  float: right;
+  position: relative;
+  left: 5px;
+}
+
+img#logo {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*===================================*/
+/*Validation*/
+/*===================================*/
+
+
+
+.invalid {
+  /* border-color: red; */
+  border: 2px solid yellow;
+}
+input#fornavn {
+  border: 2px solid red;
+}
+
+/* input:valid:focus{
+  border: 2px solid blue;
+  outline: none;
+}
+
+input:invalid::after{
+  border: 2px solid red;
+  outline: none;
+} */
+
+
+
+/* style all input elements with a required attribute */
+
+/*
+input:required {
+/*  box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85); */
+
+/**
+ * style input elements that have a required
+ * attribute and a focus state
+ */
+
+/*
+input:required:invalid {
+  border: 1px solid red;
+  outline: none;
+}*/
+
+/**
+ * style input elements that have a required
+ * attribute and a hover state
+ */
+
+/*
+input:required:hover {
+  opacity: 1;
+}*/
