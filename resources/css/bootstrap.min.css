@@ -2845,7 +2845,8 @@ input[type=search] {
   margin-bottom: 0;
   margin-right: 50px;
   font-weight: 400;
-  cursor: pointer
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
@@ -3172,7 +3173,6 @@ select[multiple].input-lg, textarea.input-lg {
   .form-horizontal .control-label {
     padding-top: 0px;
     margin-bottom: 5px;
-    text-align: right
   }
 }
 

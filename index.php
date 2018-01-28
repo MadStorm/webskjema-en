@@ -31,7 +31,7 @@
     });
   </script>
 
-  <title>Registreringsskjema</title>
+  <title>Registration Form</title>
 
 
 </head>
@@ -128,7 +128,7 @@
       <fieldset>
         <div>
           <img src="resources/images/personalialogo.svg" alt="Personalia Logo" id="personalialogo">
-          <legend id="personalia">Personalia</legend>
+          <legend id="personalia">Personal Details</legend>
           <hr />
         </div>
 
@@ -138,14 +138,14 @@
           <!-- Select Basic -->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Kjønn</label>
+            <label class="col-md-4 control-label">Gender</label>
             <div class="col-md-6 selectContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <select name="kjonn" class="form-control selectpicker" required>
-                    <option value="" disabled selected>Velg ditt kjønn</option>
-                    <option value="mann">Mann</option>
-                    <option value="kvinne">Kvinne</option>
-                    <option value="annet">Annet</option>
+                    <option value="" disabled selected>Choose gender</option>
+                    <option value="mann">Male</option>
+                    <option value="kvinne">Female</option>
+                    <option value="annet">Other</option>
                   </select>
               </div>
             </div>
@@ -154,10 +154,10 @@
           <!-- Text input-->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Fornavn</label>
+            <label class="col-md-4 control-label">First name</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" id="fornavn" name="fornavn" placeholder="Fornavn" required="true" autocomplete="off">
+                <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" id="fornavn" name="fornavn" placeholder="First name" required="true" autocomplete="off">
               </div>
             </div>
           </div>
@@ -165,10 +165,10 @@
           <!-- Text input-->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Etternavn</label>
+            <label class="col-md-4 control-label">Surname</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" id="etternavn" name="etternavn" placeholder="Etternavn" required="true" autocomplete="off">
+                <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" id="etternavn" name="etternavn" placeholder="Surname" required="true" autocomplete="off">
               </div>
             </div>
           </div>
@@ -177,10 +177,10 @@
           <!-- Text input-->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Personnummer </label>
+            <label class="col-md-4 control-label">Personal ID </label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input type="text" pattern="^[0-9]{11}$" class="form-control" name="personnummer" placeholder="Personnummer" required="true" maxlength="11" autocomplete="off">
+                <input type="text" pattern="^[0-9]{11}$" class="form-control" name="personnummer" placeholder="Personal ID" required="true" maxlength="11" autocomplete="off">
               </div>
             </div>
           </div>
@@ -188,10 +188,10 @@
           <!-- Text input-->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Adresse</label>
+            <label class="col-md-4 control-label">Address</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                <input type="text" pattern="^[a-zA-ZÆØÅæøå0-9 ]+$" class="form-control" name="adresse" placeholder="Adresse" required="true" autocomplete="off">
+                <input type="text" pattern="^[a-zA-ZÆØÅæøå0-9 ]+$" class="form-control" name="adresse" placeholder="Address" required="true" autocomplete="off">
               </div>
             </div>
           </div>
@@ -199,10 +199,10 @@
           <!-- Text input-->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Postnummer</label>
+            <label class="col-md-4 control-label">Postal Code</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                <input type="text" pattern="^[0-9]{4}$" id="postnummer" class="form-control" name="postnummer" placeholder="Postnummer" required="true" maxlength="4" autocomplete="off">
+                <input type="text" pattern="^[0-9]{4}$" id="postnummer" class="form-control" name="postnummer" placeholder="Postal Code" required="true" maxlength="4" autocomplete="off">
               </div>
             </div>
           </div>
@@ -210,10 +210,10 @@
           <!-- Text input-->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Poststed</label>
+            <label class="col-md-4 control-label">City</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="poststed" placeholder="Poststed" autocomplete="off" readonly />
+                <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="poststed" placeholder="City" autocomplete="off" readonly />
               </div>
             </div>
           </div>
@@ -221,10 +221,10 @@
           <!-- Text input-->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Kommune</label>
+            <label class="col-md-4 control-label">Municipal</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="kommune" placeholder="Kommune" required="true" autocomplete="off">
+                <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="kommune" placeholder="Municipal" required="true" autocomplete="off">
               </div>
             </div>
           </div>
@@ -233,20 +233,20 @@
           <!-- Text input-->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Telefonnummer</label>
+            <label class="col-md-4 control-label">Phone number</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                <input type="text" pattern="^[0-9\-\+]{8,15}$" class="form-control" name="telefonnummer" placeholder="Telefonnummer" required="true" autocomplete="off">
+                <input type="text" pattern="^[0-9\-\+]{8,15}$" class="form-control" name="telefonnummer" placeholder="Phone number" required="true" autocomplete="off">
               </div>
             </div>
           </div>
 
           <!-- Text input-->
           <div class="form-group">
-            <label class="col-md-4 control-label">E-post</label>
+            <label class="col-md-4 control-label">E-mail</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                <input type="email" class="form-control" id="epost" name="epost" placeholder="epost@adresse.no" required="true" autocomplete="off">
+                <input type="email" class="form-control" id="epost" name="epost" placeholder="email@email.com" required="true" autocomplete="off">
               </div>
             </div>
           </div>
@@ -254,10 +254,10 @@
           <!-- Text input-->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Bankkontonummer</label>
+            <label class="col-md-4 control-label">Bank account number</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
-                <input type="text" pattern="^[0-9]{11}$" class="form-control" name="bankkontonummer" placeholder="Bankkontonummer" maxlength="11" required="true" autocomplete="off">
+                <input type="text" pattern="^[0-9]{11}$" class="form-control" name="bankkontonummer" placeholder="Bank account number" maxlength="11" required="true" autocomplete="off">
               </div>
             </div>
           </div>
@@ -266,7 +266,7 @@
           <!-- Select Basic -->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Statsborgerskap</label>
+            <label class="col-md-4 control-label">Citizenship</label>
             <div class="col-md-6 selectContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <select name="statsborgerskap" class="form-control selectpicker" required>
@@ -528,10 +528,10 @@
           <!-- Text input-->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Nærmeste pårørendes navn</label>
+            <label class="col-md-4 control-label">Nearest relative's name</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="npnnavn" placeholder="Påførendes navn" required="true" autocomplete="off">
+                <input type="text" pattern="^[a-zA-ZÆØÅæøå ]+$" class="form-control" name="npnnavn" placeholder="Nearest relative's name" required="true" autocomplete="off">
               </div>
             </div>
           </div>
@@ -539,17 +539,17 @@
           <!-- Select Basic -->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Nærmeste pårørendes relasjon</label>
+            <label class="col-md-4 control-label">Nearest relative's relationship</label>
             <div class="col-md-6 selectContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <select name="npnrelasjon" class="form-control selectpicker" required>
-                      <option value="" disabled selected>Velg din relasjon</option>
-                      <option value="forelder">Forelder</option>
-                      <option value="ektefelle">Ektefelle</option>
-                      <option value="samboer">Samboer</option>
-                      <option value="kjaereste">Kjæreste</option>
-                      <option value="sosken">Søsken</option>
-                      <option value="annet">Annet</option>
+                      <option value="" disabled selected>Choose relation</option>
+                      <option value="forelder">Parent</option>
+                      <option value="ektefelle">Spouse</option>
+                      <option value="samboer">Partner</option>
+                      <option value="kjaereste">Girlfriend/Boyfriend</option>
+                      <option value="sosken">Sibling</option>
+                      <option value="annet">Other</option>
                     </select>
               </div>
             </div>
@@ -558,10 +558,10 @@
           <!-- Text input-->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Nærmeste pårørendes telefonnummer</label>
+            <label class="col-md-4 control-label">Nearest relative's phone number</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                <input type="text" pattern="^[0-9\-\+]{8,15}$" class="form-control" name="npntelefonnummer" placeholder="Pårørendes telefonnummer" required="true" autocomplete="off">
+                <input type="text" pattern="^[0-9\-\+]{8,15}$" class="form-control" name="npntelefonnummer" placeholder="Nearest relative's phone number" required="true" autocomplete="off">
               </div>
             </div>
           </div>
@@ -569,34 +569,34 @@
 
           <!-- Radio input-->
           <div class="form-group">
-            <label class="col-md-4 control-label">Er Canon biarbeidsgiver?</label>
+            <label class="col-md-4 control-label">Is Canon more than one employer?</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group">
                 <div class="radio">
                   <div>
                     <label>
-                      <input type="radio" name="biarbeidsgiver" value="ja" required>Ja</label>
+                      <input type="radio" name="biarbeidsgiver" value="ja" required>Yes</label>
                   </div>
                   <div>
                     <label>
-                      <input type="radio" name="biarbeidsgiver" value="nei" required>Nei</label>
+                      <input type="radio" name="biarbeidsgiver" value="nei" required>No</label>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <legend id="tilleggsopplysninger">Tilleggsopplysninger</legend>
+          <legend id="tilleggsopplysninger">Additional information</legend>
           <hr />
 
           <!-- Select Basic -->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Skostørrelse</label>
+            <label class="col-md-4 control-label">Shoe size EU standard</label>
             <div class="col-md-6 selectContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <select name="sko" class="form-control selectpicker">
-                      <option value="" disabled selected>Velg din skostørrelse</option>
+                      <option value="" disabled selected>Choose your shoe size</option>
                       <option value="34">34</option>
             				  <option value="35">35</option>
             				  <option value="36">36</option>
@@ -621,11 +621,11 @@
           <!-- Select Basic -->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">T-skjorte</label>
+            <label class="col-md-4 control-label">T-shirt size EU standard</label>
             <div class="col-md-6 selectContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <select name="tskjorte" class="form-control selectpicker">
-                      <option value="" disabled selected>Velg din t-skjortestørrelse</option>
+                      <option value="" disabled selected>Choose your t-shirt size</option>
                       <option value="xs">XS</option>
               			  <option value="s">S</option>
               			  <option value="m">M</option>
@@ -640,11 +640,11 @@
           <!-- Select Basic -->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Genser</label>
+            <label class="col-md-4 control-label">Sweater size EU standard</label>
             <div class="col-md-6 selectContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <select name="genser" class="form-control selectpicker">
-                      <option value="" disabled selected>Velg din genserstørrelse</option>
+                      <option value="" disabled selected>Choose sweater size</option>
                       <option value="xs">XS</option>
                       <option value="s">S</option>
                       <option value="m">M</option>
@@ -659,11 +659,11 @@
           <!-- Select Basic -->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Jakke</label>
+            <label class="col-md-4 control-label">Jacket size EU standard</label>
             <div class="col-md-6 selectContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <select name="jakke" class="form-control selectpicker">
-                      <option value="" disabled selected>Velg din jakkestørrelse</option>
+                      <option value="" disabled selected>Choose jacket size</option>
                       <option value="xs">XS</option>
                       <option value="s">S</option>
                       <option value="m">M</option>
@@ -678,11 +678,11 @@
           <!-- Select Basic -->
 
           <div class="form-group">
-            <label class="col-md-4 control-label">Bukse</label>
+            <label class="col-md-4 control-label">Pants size EU standard</label>
             <div class="col-md-6 selectContainer">
               <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                 <select name="bukse" class="form-control selectpicker">
-                      <option value="" disabled selected>Velg din buksestørrelse</option>
+                      <option value="" disabled selected>Choose your pants size</option>
                       <option value="xs">XS</option>
                       <option value="s">S</option>
                       <option value="m">M</option>
@@ -697,17 +697,17 @@
           <!-- Radio input-->
 
           <div class="radios">
-            <label class="col-md-4 control-label">Disponener du bil?</label>
+            <label class="col-md-4 control-label">Do you need a company car?</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group">
                 <div class="radio">
                   <div>
                     <label>
-                      <input type="radio" name="firmabil" value="ja">Ja</label>
+                      <input type="radio" name="firmabil" value="ja">Yes</label>
                   </div>
                   <div>
                     <label>
-                      <input type="radio" name="firmabil" value="nei">Nei</label>
+                      <input type="radio" name="firmabil" value="nei">No</label>
                   </div>
                 </div>
               </div>
@@ -717,17 +717,17 @@
           <!-- Radio input-->
 
           <div class="radios">
-            <label class="col-md-4 control-label">Vil du overføre privat mobilnummer til bedrift?</label>
+            <label class="col-md-4 control-label">Do you want to transfer your private mobile number to business mobile number?</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group">
                 <div class="radio">
                   <div>
                     <label>
-                      <input type="radio" name="mobilabo" value="ja">Ja</label>
+                      <input type="radio" name="mobilabo" value="ja">Yes</label>
                   </div>
                   <div>
                     <label>
-                      <input type="radio" name="mobilabo" value="nei">Nei (Nytt nummer opprettes)</label>
+                      <input type="radio" name="mobilabo" value="nei">No (A new phone number will be created)</label>
                   </div>
                 </div>
               </div>
@@ -737,7 +737,7 @@
           <!-- Radio input-->
 
           <div class="radios">
-            <label class="col-md-4 control-label">Foretrukket datamaskin?</label>
+            <label class="col-md-4 control-label">Preffered type of computer?</label>
             <div class="col-md-6  inputGroupContainer">
               <div class="input-group">
                 <div class="radio">
@@ -759,7 +759,7 @@
           <div class="form-group">
             <label class="col-md-4 control-label"></label>
             <div class="col-md-4">
-              <button type="submit" name="register" class="btn btn-warning">Registrer <span class="glyphicon glyphicon-send"></span></button>
+              <button type="submit" name="register" class="btn btn-warning">Register<span class="glyphicon glyphicon-send"></span></button>
             </div>
           </div>
       </fieldset>
@@ -790,7 +790,7 @@
             kjonn: {
               validators: {
                 notEmpty: {
-                  message: 'Vennligst velg ditt kjønn'
+                  message: 'Please choose your gender'
                 }
               }
             },
@@ -800,7 +800,7 @@
                   min: 0,
                 },
                 notEmpty: {
-                  message: 'Vennligst fyll ut fornavnet ditt'
+                  message: 'Please fill out your first name'
                 }
               }
             },
@@ -810,7 +810,7 @@
                   min: 0,
                 },
                 notEmpty: {
-                  message: 'Vennligst fyll ut etternavnet ditt'
+                  message: 'Please fill out your surname'
                 }
               }
             },
@@ -818,10 +818,10 @@
               validators: {
                 stringLength: {
                   min: 0,
-                  message: 'Vennligst fyll ut personnummeret ditt'
+                  message: 'Please fill out phone number'
                 },
                 notEmpty: {
-                  message: 'Vennligst fyll ut personnummeret ditt, 11 siffer'
+                  message: 'Please fill out phone number'
                 }
               }
             },
@@ -831,7 +831,7 @@
                   min: 0,
                 },
                 notEmpty: {
-                  message: 'Vennligst fyll ut addressen din'
+                  message: 'Please fill out your address'
                 }
               }
             },
@@ -841,7 +841,7 @@
                   min: 0,
                 },
                 notEmpty: {
-                  message: 'Vennligst fyll ut postnummeret ditt, 4 siffer'
+                  message: 'Please fill out your postal code, 4 digits'
                 }
               }
             },
@@ -851,72 +851,72 @@
                   min: 0,
                 },
                 notEmpty: {
-                  message: 'Ugyldig postnummer'
+                  message: 'Invalid City'
                 }
               }
             },
             kommune: {
               validators: {
                 stringLength: {
-                  min: 2,
+                  min: 0,
                 },
                 notEmpty: {
-                  message: 'Vennligst fyll ut kommunen din'
+                  message: 'Please fill out your municipal'
                 }
               }
             },
             telefonnummer: {
               validators: {
                 notEmpty: {
-                  message: 'Vennligst fyll ut telefonummeret ditt'
+                  message: 'Please fill out your phone number'
                 },
                 telefonnummer: {
                   country: 'NO',
-                  message: 'Vennligst fyll ut telefonnummeret ditt'
+                  message: 'Please fill out your phone number'
                 }
               }
             },
             epost: {
               validators: {
                 notEmpty: {
-                  message: 'Vennligst fyll ut eposten din'
+                  message: 'Please fill out your email address'
                 },
                 emailAddress: {
-                  message: 'Vennligst fyll ut eposten din. (epost@epost.no)'
+                  message: 'Please fill out your email address. (email@email.com)'
                 }
               }
             },
             bankkontonummer: {
               validators: {
                 stringLength: {
-                  min: 2,
+                  min: 0,
                 },
                 notEmpty: {
-                  message: 'Vennligst fyll ut bankkontonummeret ditt, 11 siffer'
+                  message: 'Please fill out your bank account number'
                 }
               }
             },
             statsborgerskap: {
               validators: {
                 notEmpty: {
-                  message: 'Vennligst velg ditt statsborgerskap'
+                  message: 'Please choose your cititizenship'
                 }
               }
             },
             npnnavn: {
               validators: {
                 stringLength: {
-                  min: 2,
+                  min: 0,
                 },
                 notEmpty: {
-                  message: 'Vennligst fyll ut navnet til nærmeste pårørende'
+                  message: 'Please fill out the name to your nearest relative'
                 }
               }
             },
             npnrelasjon: {
               validators: {
                 notEmpty: {
-                  message: 'Vennligst velg din relasjon til nærmeste pårørende'
+                  message: 'Please choose your relation to your nearest relative'
                 }
               }
             },
@@ -926,18 +926,18 @@
                   min: 0,
                 },
                 notEmpty: {
-                  message: 'Vennligst fyll ut telefonummeret til din nærmeste pårørende'
+                  message: 'Please fill out the phone number to your nearest relative'
                 },
                 npntelefonnummer: {
                   country: 'NO',
-                  message: 'Vennligst fyll ut telefonummeret til din nærmeste pårørende'
+                  message: 'Please fill out the phone number to your nearest relative'
                 }
               }
             },
             biarbeidsgiver: {
               validators: {
                 notEmpty: {
-                  message: 'Vennligst velg ditt svar'
+                  message: 'Please choose an answer'
                 }
               }
             },
@@ -969,16 +969,6 @@
         });
     });
   </script>
-<script>
-
-document.addEventListener('invalid', (function(){
-    return function(e) {
-      //prevent the browser from showing default error bubble / hint
-      e.preventDefault();
-      // optionally fire off some custom validation handler
-      // myValidation();
-    };
-})(), true);</script>
 </body>
 
 </html>
